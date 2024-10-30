@@ -61,7 +61,7 @@ $conn->close();
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 400px; /* Điều chỉnh chiều rộng container */
+            width: 400px;
         }
         h2 {
             text-align: center;
@@ -73,9 +73,9 @@ $conn->close();
         }
         input[type="text"],
         input[type="password"] {
-            width: 100%; /* Đặt chiều rộng là 100% để vừa với container */
+            width: 100%;
             padding: 12px;
-            margin-bottom: 15px; /* Tạo khoảng cách giữa các trường */
+            margin-bottom: 15px;
             border: 1px solid #ccc;
             border-radius: 4px;
             box-sizing: border-box;
@@ -100,6 +100,9 @@ $conn->close();
             border-radius: 4px;
             background-color: #e9ecef;
             text-align: center;
+            max-width: 300px; /* Giới hạn chiều rộng */
+            word-wrap: break-word; /* Ngắt dòng khi cần */
+            margin: 0 auto; /* Căn giữa khung kết quả */
         }
     </style>
 </head>
@@ -126,3 +129,4 @@ $conn->close();
     </div>
 </body>
 </html>
+
